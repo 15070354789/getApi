@@ -53,6 +53,6 @@ app.post("/webhook/shopee", (req, res) => {
 
 const port = process.env.PORT || 3000;
 
-app.listen(port, () => {
-  console.log(`Hengchun API is running on port ${port}`);
+app.listen(port, "0.0.0.0", () => {
+  console.log(`Server is running on port ${port}`);
 });
